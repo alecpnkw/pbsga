@@ -1,0 +1,6 @@
+name: pacbio-sga
+dependencies:
+  - snakemake-minimal
+  - python =3.7
+  - pyyaml
+  - pandas

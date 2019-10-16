@@ -1,0 +1,37 @@
+---
+title: "Edit distances for H704 dUMI Samples"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    code_folding: "hide"
+params:
+  rmd: "reports/report.Rmd"
+---
+
+```{r, echo = F, warning = F, message = F}
+require(readr)
+require(dplyr)
+ranked <- read_csv(snakemake@input[[1]])
+
+summary <- ranked %>% arrange(dataset) %>%
+  mutate(edit_dist = as.factor(edit_dist)) %>%
+  group_by(sample, dataset, edit_dist) %>%
+  summarise(ccs_reads = sum(fs)) %>%
+  ungroup() %>%
+  group_by(sample) %>%
+  mutate(ccs_prop = ccs_reads/sum(ccs_reads)) %>%
+  ungroup()
+
+ordered.samples <- summary %>% arrange(dataset) %>% select(sample) %>% unique
+summary <- summary %>% mutate(
+  sample = factor(sample, levels = rev(ordered.samples$sample)))
+```
+
+```{r, fig.height=4, fig.width=6, message = F, warning = F}
+require(ggplot2)
+ggplot(summary, aes(sample, ccs_prop, fill = edit_dist)) + geom_bar(stat = "identity") +
+  coord_flip() + theme_minimal()
+```
+
+## Source
+<a download="report.Rmd" href="`r base64enc::dataURI(file = params$rmd, mime = 'text/rmd', encoding = 'base64')`">R Markdown source file (to produce this document)</a>

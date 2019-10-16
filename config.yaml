@@ -1,0 +1,403 @@
+datasets:
+  2018-11_NIH_B670_M2199_Cell1:
+    index_type: nextera
+    target_size: 2100
+    templates:
+      A14044_wk40_LowInput_BP:
+        Index_1: N705
+        Index_2: S503
+      A14047_wk40:
+        Index_1: N706
+        Index_2: S504
+      A15123_wk40:
+        Index_1: N706
+        Index_2: S505
+      A15355_wk6_HighInput:
+        Index_1: N706
+        Index_2: S502
+      A15355_wk6_HighInput_BP:
+        Index_1: N706
+        Index_2: S503
+      A15355_wk6_LowInput:
+        Index_1: N705
+        Index_2: S508
+      A15355_wk6_LowInput_BP:
+        Index_1: N706
+        Index_2: S517
+      B670_Stock_HighInput:
+        Index_1: N705
+        Index_2: S506
+      B670_Stock_HighInput_BP:
+        Index_1: N705
+        Index_2: S507
+      B670_Stock_LowInput:
+        Index_1: N705
+        Index_2: S504
+      B670_Stock_LowInput_BP:
+        Index_1: N705
+        Index_2: S505
+  2018-12_UW_H704_M2217:
+    index_type: nextera
+    target_size: 2100
+    templates:
+      H704_2150_230_REN_e01:
+        Index_1: N701
+        Index_2: S517
+      H704_2150_230_REN_e02:
+        Index_1: N701
+        Index_2: S502
+      H704_2150_230_REN_e03:
+        Index_1: N701
+        Index_2: S503
+      H704_2150_230_REN_e04:
+        Index_1: N701
+        Index_2: S504
+      H704_2150_230_REN_e05:
+        Index_1: N701
+        Index_2: S505
+      H704_2150_230_REN_e06:
+        Index_1: N701
+        Index_2: S506
+      H704_2150_230_REN_e07:
+        Index_1: N701
+        Index_2: S507
+      H704_2150_230_REN_e08:
+        Index_1: N701
+        Index_2: S508
+      H704_2150_230_REN_e09:
+        Index_1: N702
+        Index_2: S517
+      H704_2150_230_REN_e10:
+        Index_1: N702
+        Index_2: S502
+      H704_2150_230_REN_e11:
+        Index_1: N702
+        Index_2: S503
+      H704_2150_230_REN_e12:
+        Index_1: N702
+        Index_2: S504
+      H704_2150_230_REN_e13:
+        Index_1: N702
+        Index_2: S505
+      H704_2150_230_REN_e14:
+        Index_1: N702
+        Index_2: S506
+      H704_2150_230_REN_e15:
+        Index_1: N702
+        Index_2: S507
+      H704_2150_230_REN_e16:
+        Index_1: N702
+        Index_2: S508
+      H704_2150_230_REN_e17:
+        Index_1: N703
+        Index_2: S517
+      H704_2150_230_REN_e18:
+        Index_1: N703
+        Index_2: S502
+      H704_2150_230_REN_e19:
+        Index_1: N703
+        Index_2: S503
+      H704_2150_230_REN_e20:
+        Index_1: N703
+        Index_2: S504
+      H704_2150_230_REN_e21:
+        Index_1: N703
+        Index_2: S505
+      H704_2150_230_REN_e22:
+        Index_1: N703
+        Index_2: S506
+      H704_2150_230_REN_e23:
+        Index_1: N703
+        Index_2: S507
+      H704_2541_081_REN_e01:
+        Index_1: N708
+        Index_2: S517
+      H704_2541_081_REN_e02:
+        Index_1: N708
+        Index_2: S502
+      H704_2541_081_REN_e03:
+        Index_1: N708
+        Index_2: S503
+      H704_2541_081_REN_e04:
+        Index_1: N708
+        Index_2: S504
+      H704_2541_081_REN_e05:
+        Index_1: N708
+        Index_2: S505
+      H704_2541_081_REN_e06:
+        Index_1: N708
+        Index_2: S506
+      H704_2541_081_REN_e07:
+        Index_1: N708
+        Index_2: S507
+      H704_2541_081_REN_e08:
+        Index_1: N708
+        Index_2: S508
+      H704_2541_081_REN_e09:
+        Index_1: N709
+        Index_2: S517
+      H704_2541_081_REN_e10:
+        Index_1: N709
+        Index_2: S502
+      H704_2541_081_REN_e11:
+        Index_1: N709
+        Index_2: S503
+      H704_2541_081_REN_e12:
+        Index_1: N709
+        Index_2: S504
+      H704_2541_081_REN_e13:
+        Index_1: N709
+        Index_2: S505
+      H704_2541_081_REN_e14:
+        Index_1: N709
+        Index_2: S506
+      H704_2541_081_REN_e15:
+        Index_1: N709
+        Index_2: S507
+      H704_2541_081_REN_e16:
+        Index_1: N709
+        Index_2: S508
+      H704_2541_081_REN_e17:
+        Index_1: N710
+        Index_2: S517
+      H704_2541_081_REN_e18:
+        Index_1: N710
+        Index_2: S502
+      H704_2541_081_REN_e19:
+        Index_1: N710
+        Index_2: S503
+      H704_2541_081_REN_e20:
+        Index_1: N710
+        Index_2: S504
+      H704_2541_081_REN_e21:
+        Index_1: N710
+        Index_2: S505
+      H704_2541_081_REN_e22:
+        Index_1: N710
+        Index_2: S506
+      H704_2541_081_REN_e23:
+        Index_1: N710
+        Index_2: S507
+      H704_2541_081_REN_e24:
+        Index_1: N710
+        Index_2: S508
+      H704_2541_081_REN_e25:
+        Index_1: N711
+        Index_2: S517
+      H704_2541_081_REN_e26:
+        Index_1: N711
+        Index_2: S502
+      H704_2541_081_REN_e27:
+        Index_1: N711
+        Index_2: S503
+      H704_2541_081_REN_e28:
+        Index_1: N711
+        Index_2: S504
+      H704_2541_081_REN_e29:
+        Index_1: N711
+        Index_2: S505
+      H704_2541_081_REN_e30:
+        Index_1: N711
+        Index_2: S506
+      H704_2541_081_REN_e31:
+        Index_1: N711
+        Index_2: S507
+      H704_3083_030_REN_e01:
+        Index_1: N704
+        Index_2: S517
+      H704_3083_030_REN_e02:
+        Index_1: N704
+        Index_2: S502
+      H704_3083_030_REN_e03:
+        Index_1: N704
+        Index_2: S503
+      H704_3083_030_REN_e04:
+        Index_1: N704
+        Index_2: S504
+      H704_3083_030_REN_e05:
+        Index_1: N704
+        Index_2: S505
+      H704_3083_030_REN_e06:
+        Index_1: N704
+        Index_2: S506
+      H704_3083_030_REN_e07:
+        Index_1: N704
+        Index_2: S507
+      H704_3083_030_REN_e08:
+        Index_1: N704
+        Index_2: S508
+      H704_3083_030_REN_e09:
+        Index_1: N705
+        Index_2: S517
+      H704_3083_030_REN_e10:
+        Index_1: N705
+        Index_2: S502
+      H704_3083_030_REN_e11:
+        Index_1: N705
+        Index_2: S503
+      H704_3083_030_REN_e12:
+        Index_1: N705
+        Index_2: S504
+      H704_3083_030_REN_e13:
+        Index_1: N705
+        Index_2: S505
+      H704_3083_030_REN_e14:
+        Index_1: N705
+        Index_2: S506
+      H704_3083_030_REN_e15:
+        Index_1: N705
+        Index_2: S507
+      H704_3083_030_REN_e16:
+        Index_1: N705
+        Index_2: S508
+      H704_3083_030_REN_e17:
+        Index_1: N706
+        Index_2: S517
+      H704_3083_030_REN_e18:
+        Index_1: N706
+        Index_2: S502
+      H704_3083_030_REN_e19:
+        Index_1: N706
+        Index_2: S503
+      H704_3083_030_REN_e20:
+        Index_1: N706
+        Index_2: S504
+      H704_3083_030_REN_e21:
+        Index_1: N706
+        Index_2: S505
+      H704_3083_030_REN_e22:
+        Index_1: N706
+        Index_2: S506
+      H704_3083_030_REN_e23:
+        Index_1: N706
+        Index_2: S507
+      H704_3083_030_REN_e24:
+        Index_1: N706
+        Index_2: S508
+      H704_3083_030_REN_e25:
+        Index_1: N707
+        Index_2: S517
+      H704_3083_030_REN_e26:
+        Index_1: N707
+        Index_2: S502
+      H704_3083_030_REN_e27:
+        Index_1: N707
+        Index_2: S503
+      H704_3083_030_REN_e28:
+        Index_1: N707
+        Index_2: S504
+      H704_3083_030_REN_e29:
+        Index_1: N707
+        Index_2: S505
+      H704_3083_030_REN_e30:
+        Index_1: N707
+        Index_2: S506
+      H704_3083_030_REN_e31:
+        Index_1: N707
+        Index_2: S507
+      H704_3083_030_REN_e32:
+        Index_1: N707
+        Index_2: S508
+  2019-08_UW_H704_M4538:
+    index_type: nextera
+    target_size: 2100
+    templates:
+      H704_0026_231_REN_pe01:
+        Index_1: N709
+        Index_2: S517
+      H704_0026_231_REN_pe02:
+        Index_1: N709
+        Index_2: S502
+      H704_0026_231_REN_pe03:
+        Index_1: N709
+        Index_2: S503
+      H704_0026_231_REN_pe04:
+        Index_1: N709
+        Index_2: S504
+      H704_0026_231_REN_pe05:
+        Index_1: N709
+        Index_2: S505
+      H704_0026_231_REN_pe06:
+        Index_1: N709
+        Index_2: S506
+      H704_0026_231_REN_pe07:
+        Index_1: N709
+        Index_2: S507
+      H704_0026_231_REN_pe08:
+        Index_1: N709
+        Index_2: S508
+      H704_0026_231_REN_pe09:
+        Index_1: N710
+        Index_2: S517
+      H704_0026_231_REN_pe10:
+        Index_1: N710
+        Index_2: S502
+      H704_0026_231_REN_pe11:
+        Index_1: N710
+        Index_2: S503
+      H704_0026_231_REN_pe12:
+        Index_1: N710
+        Index_2: S504
+      H704_0026_231_REN_pe13:
+        Index_1: N710
+        Index_2: S505
+      H704_0026_231_REN_pe14:
+        Index_1: N710
+        Index_2: S506
+      H704_0026_231_REN_pe15:
+        Index_1: N710
+        Index_2: S507
+      H704_0026_231_REN_pe16:
+        Index_1: N710
+        Index_2: S508
+      H704_0026_231_REN_pe17:
+        Index_1: N711
+        Index_2: S517
+      H704_0026_231_REN_pe18:
+        Index_1: N711
+        Index_2: S502
+      H704_0026_231_REN_pe19:
+        Index_1: N711
+        Index_2: S503
+      H704_0026_231_REN_pe20:
+        Index_1: N711
+        Index_2: S504
+      H704_0026_231_REN_pe21:
+        Index_1: N711
+        Index_2: S505
+      H704_0026_231_REN_pe22:
+        Index_1: N711
+        Index_2: S506
+      H704_0026_231_REN_pe23:
+        Index_1: N711
+        Index_2: S507
+      H704_0026_231_REN_pe24:
+        Index_1: N711
+        Index_2: S508
+      H704_0026_231_REN_pe25:
+        Index_1: N712
+        Index_2: S517
+      H704_0026_231_REN_pe26:
+        Index_1: N712
+        Index_2: S502
+      H704_0026_231_REN_pe27:
+        Index_1: N712
+        Index_2: S503
+      H704_0026_231_REN_pe28:
+        Index_1: N712
+        Index_2: S504
+      H704_0026_231_REN_pe29:
+        Index_1: N712
+        Index_2: S505
+      H704_0026_231_REN_pe30:
+        Index_1: N712
+        Index_2: S506
+      H704_0026_231_REN_pe31:
+        Index_1: N712
+        Index_2: S507
+      H704_0026_231_REN_pe32:
+        Index_1: N712
+        Index_2: S508
+      H704_0026_231_REN_pe33:
+        Index_1: N708
+        Index_2: S508

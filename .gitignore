@@ -1,0 +1,4 @@
+.snakemake/
+tmp/
+._*
+.DS_Store
