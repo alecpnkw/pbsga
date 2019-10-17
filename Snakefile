@@ -1,3 +1,6 @@
+from snakemake.remote.SFTP import RemoteProvider
+SFTP = RemoteProvider(username="appankow", private_key="/home/appankow/.ssh/id_rsa_themis")
+
 configfile: "config.yaml"
 
 rule all:
@@ -6,10 +9,10 @@ rule all:
 
 rule demux:
     input:
-        "raw_reads/{dataset}.fastq"
+        SFTP.remote("hercules/opt/shared/PacBio_PipelineData/{dataset}/{dataset}.fastq")
     output:
         directory("demux/{dataset}/"),
-        #temporary("tmp/{dataset}_filt.fastq")
+        temporary("tmp/{dataset}_filt.fastq")
     params:
         index_type = lambda wc: config["datasets"][wc.dataset]["index_type"],
         target_size = lambda wc: config["datasets"][wc.dataset]["target_size"],

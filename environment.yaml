@@ -4,3 +4,11 @@ dependencies:
   - python =3.7
   - pyyaml
   - pandas
+  - boto
+  - moto
+  - filechunkio
+  - pysftp
+  - requests
+  - ftputil
+  - XRootD
+  - biopython

@@ -9,9 +9,9 @@ def create_config(input_csv_fhs, target_size = 2100, index_type = "nextera"):
         df = pd.read_csv(input_csv)
         #filter to defined N7/S5
         df = df[(pd.notna(df["N7_Index"])) & (pd.notna(df["S5_Index"]))]
+        sub_df = df[["N7_Index","S5_Index","Forward_Primer_2ndRd_Sequence","Reverse_Primer_2ndRd_Sequence"]]
         #iterate
-        index_values = zip(df["N7_Index"],df["S5_Index"])
-        index_dicts = [{"Index_1": x, "Index_2": y} for (x,y) in index_values]
+        index_dicts = [sub_df.iloc[i].to_dict() for i in range(sub_df.shape[0])]
         template_dict = dict(zip(df["Sample"], index_dicts))
         dataset_dict = {
             "target_size": target_size,
