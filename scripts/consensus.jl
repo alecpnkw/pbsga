@@ -37,7 +37,7 @@ end
 
 #Calculate consensus sequences for each family.
 t1 = time()
-cons_colletion, name_collection = denoiseDir(ARGS[1])
+cons_collection, name_collection = denoiseDir(ARGS[1])
 write_fasta(ARGS[2],
     cons_collection;
     names = name_collection)
