@@ -661,3 +661,253 @@ datasets:
         N7_Index: N708
         Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
         S5_Index: S508
+  2019-08_UW_H704_HHV8_IRF3_M4512:
+    index_type: sga_primer
+    target_size: 500
+    templates:
+      CR18d7_6_BACH2_1:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCTGGGAAAATGTTAGTTAATTTTGGGATT
+        N7_Index: SGA_F07
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATTTACTCCACACCACACAACTTAC
+        S5_Index: SGA_R04
+      CR18d7_6_BACH2_1_1ul:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCTGGGAAAATGTTAGTTAATTTTGGGATT
+        N7_Index: SGA_F11
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATTTACTCCACACCACACAACTTAC
+        S5_Index: SGA_R04
+      CR18d7_6_BACH2_2:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCTGGGAAAATGTTAGTTAATTTTGGGATT
+        N7_Index: SGA_F08
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATTTACTCCACACCACACAACTTAC
+        S5_Index: SGA_R04
+      CR18d7_6_BACH2_2_1ul:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCTGGGAAAATGTTAGTTAATTTTGGGATT
+        N7_Index: SGA_F12
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATTTACTCCACACCACACAACTTAC
+        S5_Index: SGA_R04
+      CR18d7_6_BACH2_3:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCTGGGAAAATGTTAGTTAATTTTGGGATT
+        N7_Index: SGA_F09
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATTTACTCCACACCACACAACTTAC
+        S5_Index: SGA_R04
+      CR18d7_6_BACH2_4:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCTGGGAAAATGTTAGTTAATTTTGGGATT
+        N7_Index: SGA_F10
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATTTACTCCACACCACACAACTTAC
+        S5_Index: SGA_R04
+  2019-08_UW_H704_HHV8_IRF3_M4512:
+    index_type: sga_primer
+    target_size: 3100
+      H704_1225_310_REN_pe01:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F01
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R01
+      H704_1225_310_REN_pe02:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F02
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R01
+      H704_1225_310_REN_pe03:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F03
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R01
+      H704_1225_310_REN_pe04:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F04
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R01
+      H704_1225_310_REN_pe05:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F05
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R01
+      H704_1225_310_REN_pe06:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F06
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R01
+      H704_1225_310_REN_pe07:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F07
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R01
+      H704_1225_310_REN_pe08:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F11
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R01
+      H704_1225_310_REN_pe09:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F12
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R01
+      H704_1225_310_REN_pe10:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F01
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R02
+      H704_1225_310_REN_pe11:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F02
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R02
+      H704_1225_310_REN_pe12:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F03
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R02
+      H704_1225_310_REN_pe13:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F04
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R02
+      H704_1225_310_REN_pe14:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F05
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R02
+      H704_1225_310_REN_pe15:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F06
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R02
+      H704_1225_310_REN_pe16:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F07
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R02
+      H704_1225_310_REN_pe17:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F11
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R02
+      H704_1225_310_REN_pe18:
+        Forward_Primer_2ndRd_Sequence: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        N7_Index: SGA_F12
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+        S5_Index: SGA_R02
+  2019-08_UW_H704_HHV8_IRF3_M4512:
+    index_type: sga_primer
+    target_size: 2400
+      H704_2150_230_GP_pe01:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F01
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R01
+      H704_2150_230_GP_pe02:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F02
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R01
+      H704_2150_230_GP_pe03:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F03
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R01
+      H704_2150_230_GP_pe04:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F04
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R01
+      H704_2150_230_GP_pe05:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F05
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R01
+      H704_2150_230_GP_pe06:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F06
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R01
+      H704_2150_230_GP_pe07:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F07
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R01
+      H704_2150_230_GP_pe08:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F08
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R01
+      H704_2150_230_GP_pe09:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F09
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R01
+      H704_2150_230_GP_pe10:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F10
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R01
+      H704_2150_230_GP_pe11:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F11
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R01
+      H704_2150_230_GP_pe12:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F12
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R01
+      H704_2150_230_GP_pe14:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F01
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R02
+      H704_2150_230_GP_pe15:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F02
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R02
+      H704_2150_230_GP_pe16:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F03
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R02
+      H704_2150_230_GP_pe17:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F04
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R02
+      H704_2150_230_GP_pe19:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F05
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R02
+      H704_2150_230_GP_pe22:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F06
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R02
+      H704_2150_230_GP_pe24:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F07
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R02
+      H704_2150_230_GP_pe25:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F08
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R02
+      H704_2150_230_GP_pe26:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F09
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R02
+      H704_2150_230_GP_pe27:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F10
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R02
+      H704_2150_230_GP_pe30:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F11
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R02
+      H704_2150_230_GP_pe31:
+        Forward_Primer_2ndRd_Sequence: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        N7_Index: SGA_F12
+        Reverse_Primer_2ndRd_Sequence: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+        S5_Index: SGA_R02

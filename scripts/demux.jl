@@ -21,7 +21,7 @@ println("Error rate: $(error_rate)")
 
 #load required packages
 ENV["MPLBACKEND"] = "Agg"
-using NextGenSeqUtils, DataFrames, DataFramesMeta, CSV, StatsBase, IterTools
+using NextGenSeqUtils, DataFrames, DataFramesMeta, CSV, StatsBase, IterTools, StringDistances
 
 #defining functions
 function unique_not_substr(a)
@@ -138,45 +138,101 @@ S5_univ = "AATGATACGGCGACCACCGAGATCTACAC";
 N7_suffix = "GTCTCGTGGGCTCGG"
 S5_suffix = "TCGTCGGCAGCGTC"
 
+#"sga" primers
+sga_primers_f = Dict(
+  "SGA_F01" => "CTACACTCGCCTTATCGTCGGCAGCGTC",
+  "SGA_F02" => "CTACACCTAGTACGTCGTCGGCAGCGTC",
+  "SGA_F03" => "CTACACTTCTGCCTTCGTCGGCAGCGTC",
+  "SGA_F04" => "CTACACGCTCAGGATCGTCGGCAGCGTC",
+  "SGA_F05" => "CTACACAGGAGTCCTCGTCGGCAGCGTC",
+  "SGA_F06" => "CTACACCATGCCTATCGTCGGCAGCGTC",
+  "SGA_F07" => "CTACACGTAGAGAGTCGTCGGCAGCGTC",
+  "SGA_F08" => "CTACACCAGCCTCGTCGTCGGCAGCGTC",
+  "SGA_F09" => "CTACACTGCCTCTTTCGTCGGCAGCGTC",
+  "SGA_F10" => "CTACACTCCTCTACTCGTCGGCAGCGTC",
+  "SGA_F11" => "CTACACTCATGAGCTCGTCGGCAGCGTC",
+  "SGA_F12" => "CTACACCCTGAGATTCGTCGGCAGCGTC",
+  "SGA_F13" => "CTACACTAGCGAGTTCGTCGGCAGCGTC",
+  "SGA_F14" => "CTACACGTAGCTCCTCGTCGGCAGCGTC",
+  "SGA_F15" => "CTACACTACTACGCTCGTCGGCAGCGTC",
+  "SGA_F16" => "CTACACAGGCTCCGTCGTCGGCAGCGTC",
+  "SGA_F17" => "CTACACGCAGCGTATCGTCGGCAGCGTC",
+  "SGA_F18" => "CTACACCTGCGCATTCGTCGGCAGCGTC",
+  "SGA_F19" => "CTACACGAGCGCTATCGTCGGCAGCGTC",
+  "SGA_F20" => "CTACACCGCTCAGTTCGTCGGCAGCGTC",
+  "SGA_F21" => "CTACACGTCTTAGGTCGTCGGCAGCGTC",
+  "SGA_F22" => "CTACACACTGATCGTCGTCGGCAGCGTC",
+  "SGA_F23" => "CTACACTAGCTGCATCGTCGGCAGCGTC",
+  "SGA_F24" => "CTACACGACGTCGATCGTCGGCAGCGTC"
+);
+
+sga_primers_r = Dict(
+  "SGA_R01" => "CGAGATCTCTCTATGTCTCGTGGGCTCGG",
+  "SGA_R02" => "CGAGATTATCCTCTGTCTCGTGGGCTCGG",
+  "SGA_R03" => "CGAGATGTAAGGAGGTCTCGTGGGCTCGG",
+  "SGA_R04" => "CGAGATACTGCATAGTCTCGTGGGCTCGG",
+);
+
+function find_nextera_suffix(query_seq, query_phred, suffix; start_ix = 34, end_ix = 12, try_reverse_comp = true)
+    for ix in start_ix:-1:end_ix
+        window = query_seq[ix : ix + length(suffix) - 1]
+        d = evaluate(Hamming(), window, suffix)
+        if d < 2
+            return(query_seq[ix - 8:end], query_phred[ix - 8:end])
+        end
+    end
+    #try reverse complement
+    if try_reverse_comp
+        query_seq = reverse_complement(query_seq)
+        query_phred = query_phred[end:-1:1]
+        for ix in start_ix:-1:end_ix
+            window = query_seq[ix : ix + length(suffix) - 1]
+            d = evaluate(Hamming(), window, suffix)
+            if d < 2
+                return(query_seq[ix - 8:end], query_phred[ix - 8:end])
+            end
+        end
+    end
+end
+
+function get_nextera_matches(seqs, phreds)
+    #define universal adapter sequences
+    N7_univ = "CAAGCAGAAGACGGCATACGAGAT";
+    S5_univ = "AATGATACGGCGACCACCGAGATCTACAC";
+
+    N7_suffix = "GTCTCGTGGGCTCGG";
+    S5_suffix = "TCGTCGGCAGCGTC";
+
+    #find N7
+    N7_matches = find_nextera_suffix.(seqs, phreds, N7_suffix;
+        start_ix = length(N7_univ) + 10, end_ix = 12, try_reverse_comp = true)
+
+    N7_coords = [i for (i,m) in enumerate(N7_matches) if !isnothing(m)]
+    N7_keeps = N7_matches[N7_coords]
+
+    #find S5 (no revc)
+    matches = find_nextera_suffix.([s for (s,p) in N7_keeps],
+        [p for (s,p) in N7_keeps], S5_suffix;
+        start_ix = length(S5_univ) + 10, end_ix = 12, try_reverse_comp = true) #find a better solution than this
+    coords = [i for (i,m) in enumerate(matches) if !isnothing(m)]
+    keeps = matches[coords]
+
+    return [s for (s,p) in keeps], [p for (s,p) in keeps], coords
+end
+
 """
 demux CCS based on nextera illumina adapter sequences using a sliding primer match.
 Writes collections of reads to .fastq named by index.
 """
-function demux_nextera(file; outdir = "demux/", thresh = 100, verbose = true)
+function demux_nextera(file; verbose = true)
     if verbose println("Demultiplexing $(file)...") end
-    outdir = strip(outdir,'/')
-    seqs, phreds, names = read_fastq(file);
-    if verbose println("Finding sequences with N7 index...") end
-    #sliding window demultiplex on forward primers
-    fwd_demux_dic = sliding_demux_dict(seqs,
-                                       [N7_univ],
-                                       10,
-                                       14,
-                                       verbose=false,
-                                       phreds = phreds)
-    #There is only one entry in this dict
-    #retrieve from demux_dic
-    seqs_N7 = [i[1] for i in fwd_demux_dic[1]];
-    phreds_N7 = [i[2] for i in fwd_demux_dic[1]];
-    names_N7 = names[[i[3] for i in fwd_demux_dic[1]]];
-    if verbose println("$(length(seqs_N7)) sequences match N7 adapters.") end
-    #match to reverse adapter
-    S5_matches = iterative_primer_match(seqs_N7, [S5_univ], 6, 23, tol_one_error=true);
-    S5_keepers = S5_matches .< 0;
-    #filter to reverse adapter matches
-    seqs_N7S5 = seqs_N7[S5_keepers];
-    phreds_N7S5 = phreds_N7[S5_keepers];
-    names_N7S5 = names_N7[S5_keepers];
-    if verbose println("$(length(seqs_N7S5)) sequences match N7 and S5 adapters.") end
-    seqs_N7S5_trim = [double_primer_trim(s, p, N7_univ, S5_univ) for (s,p) in zip(seqs_N7S5, phreds_N7S5)];
-    #run demux by paired indexes
-    nextera_demux_dic = demux_dict(
-        [s for (s,p) in seqs_N7S5_trim],
-        collect(values(N7_dic)),
-        collect(values(S5_dic));
-        phreds = [p for (s,p) in seqs_N7S5_trim],
-        tol_one_error = false,
-        verbose = false);
+    seqs, phreds, seqnames = read_fastq(file);
+
+    #proper usage
+    @time matched_seqs, matched_phreds, coords = get_nextera_matches(seqs, phreds);
+    names_N7S5 = seqnames[coords];
+    nextera_demux_dic = demux_dict(matched_seqs,collect(values(N7_dic)),collect(values(S5_dic));
+        phreds = matched_phreds,tol_one_error = false,verbose = false);
     return nextera_demux_dic, names_N7S5
 end
 
@@ -191,7 +247,7 @@ println("Filtering .fastq file...")
                    max_length = snakemake.params["target_size"]*1.2)
 
 if snakemake.params["index_type"] == "nextera"
-    nextera_demux_dic,seqnames = demux_nextera(filtered_path, outdir = "demux/$(dataset)/nextera/")
+    nextera_demux_dic,seqnames = demux_nextera(filtered_path)
     nex_tuples = collect(keys(nextera_demux_dic))
     N7 = collect(keys(N7_dic))
     S5 = collect(keys(S5_dic))
@@ -206,6 +262,36 @@ if snakemake.params["index_type"] == "nextera"
                 double_primer_trim(s,p,
                 N7_suffix*templates[template]["Reverse_Primer_2ndRd_Sequence"],S5_suffix*templates[template]["Forward_Primer_2ndRd_Sequence"];
                 buffer = 8)
+            for (s,p) in template_seqs
+            ]
+            write_fastq(snakemake.output[1]*"/$(template).fastq",
+                        [i[1] for i in trimmed_seqs],
+                        [i[2] for i in trimmed_seqs];
+                        names = seqnames[[i[3] for i in template_seqs]])
+        else
+            @warn "No reads found for $(template): $(indexes)"
+        end
+    end
+elseif snakemake.params["index_type"] == "sga_primer"
+    seqs, phreds, seqnames = read_fastq(filtered_path)
+    demux_dic = demux_dict(seqs,
+        collect(values(sga_primers_f)),
+        collect(values(sga_primers_r));
+        phreds = phreds,
+        tol_one_error = true);
+    nex_tuples = collect(keys(demux_dic))
+    SGA_F = collect(keys(sga_primers_f))
+    SGA_R = collect(keys(sga_primers_r))
+    index_tuples = [(SGA_F[x],SGA_R[y]) for (x,y) in nex_tuples]
+    indexes2tuples = Dict(zip(index_tuples,nex_tuples))
+    for template in collect(keys(templates))
+        indexes = templates[template]
+        if (indexes["N7_Index"],indexes["S5_Index"]) in index_tuples
+            template_seqs = demux_dic[indexes2tuples[(indexes["N7_Index"],indexes["S5_Index"])]]
+            if length(template_seqs) < 5 @warn "Less than 5 reads for $(template): $(indexes)" end
+            trimmed_seqs = [
+                double_primer_trim(s,p,
+                templates[template]["Forward_Primer_2ndRd_Sequence"],templates[template]["Reverse_Primer_2ndRd_Sequence"])
             for (s,p) in template_seqs
             ]
             write_fastq(snakemake.output[1]*"/$(template).fastq",

@@ -1,4 +1,5 @@
 .snakemake/
+old-demux/
 tmp/
 ._*
 .DS_Store
