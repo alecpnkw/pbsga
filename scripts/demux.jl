@@ -15,7 +15,7 @@ println("Input fastq: $(input_fastq_path)")
 #for template in templates
 #    println(template)
 #end
-println("Target size: $(snakemake.params["target_size"])")
+#println("Target size: $(snakemake.params["target_size"])")
 println("Index type: $(snakemake.params["index_type"])")
 println("Error rate: $(error_rate)")
 
@@ -243,8 +243,8 @@ println("Filtering .fastq file...")
 @time fastq_filter(input_fastq_path,
                    filtered_path, #path here
                    error_rate = error_rate,
-                   min_length = snakemake.params["target_size"]*0.8,
-                   max_length = snakemake.params["target_size"]*1.2)
+                   min_length = 400,
+                   max_length = 5000)
 
 if snakemake.params["index_type"] == "nextera"
     nextera_demux_dic,seqnames = demux_nextera(filtered_path)
@@ -257,6 +257,8 @@ if snakemake.params["index_type"] == "nextera"
         indexes = templates[template]
         if (indexes["N7_Index"],indexes["S5_Index"]) in index_tuples
             template_seqs = nextera_demux_dic[indexes2tuples[(indexes["N7_Index"],indexes["S5_Index"])]]
+            #match template sequences, length here
+
             if length(template_seqs) < 5 @warn "Less than 5 reads for $(template): $(indexes)" end
             trimmed_seqs = [
                 double_primer_trim(s,p,
@@ -288,16 +290,28 @@ elseif snakemake.params["index_type"] == "sga_primer"
         indexes = templates[template]
         if (indexes["N7_Index"],indexes["S5_Index"]) in index_tuples
             template_seqs = demux_dic[indexes2tuples[(indexes["N7_Index"],indexes["S5_Index"])]]
-            if length(template_seqs) < 5 @warn "Less than 5 reads for $(template): $(indexes)" end
+            #match template
+            keeps = iterative_primer_match([s for (s,p) in template_seqs], templates[template]["Forward_Primer_2ndRd_Sequence"],10,5) .> 0
+            seqs_keeping = template_seqs[keeps]
+            #length filter
+            filtered_seqs = length_filter(
+                [s for (s,p) in seqs_keeping,
+                [p for (s,p) in seqs_keeping,
+                seqnames[[i[3] for i in template_seqs]][keeps]
+                median(length.(seqs))*0.9,
+                median(length.(seqs))*1.1
+                ) #check
+
+            if length(filtered_seqs) < 5 @warn "Less than 5 reads for $(template): $(indexes)" end
             trimmed_seqs = [
                 double_primer_trim(s,p,
                 templates[template]["Forward_Primer_2ndRd_Sequence"],templates[template]["Reverse_Primer_2ndRd_Sequence"])
-            for (s,p) in template_seqs
+            for (s,p,n) in filtered_seqs
             ]
             write_fastq(snakemake.output[1]*"/$(template).fastq",
                         [i[1] for i in trimmed_seqs],
                         [i[2] for i in trimmed_seqs];
-                        names = seqnames[[i[3] for i in template_seqs]])
+                        names = [n for (s,p,n) in filtered_seqs])
         else
             @warn "No reads found for $(template): $(indexes)"
         end
