@@ -12,10 +12,11 @@ rule demux:
         SFTP.remote("hercules/opt/shared/PacBio_PipelineData/{dataset}/{dataset}.fastq")
     output:
         directory("demux/{dataset}/"),
-        temporary("tmp/{dataset}_filt.fastq")
+        counts = "counts/{dataset}.csv",
+        filtered_file = temporary("tmp/{dataset}_filt.fastq"),
     params:
         index_type = lambda wc: config["datasets"][wc.dataset]["index_type"],
-        #target_size = lambda wc: config["datasets"][wc.dataset]["target_size"],
+        outdir = "demux/{dataset}",
         templates = lambda wc: config["datasets"][wc.dataset]["templates"]
     script:
         "scripts/demux.jl"

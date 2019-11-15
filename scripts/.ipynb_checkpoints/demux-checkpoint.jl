@@ -7,21 +7,20 @@ Snakemake pipeline.
 input_fastq_path = snakemake.input[1]
 dataset = split(basename(input_fastq_path),".")[1]
 error_rate = 0.01
-min_length = 400
-max_length = 5000
 templates = snakemake.params["templates"]
 
 println("Running demux with the following parameters...")
 println("Input fastq: $(input_fastq_path)")
-println("Minimum library length: $(min_length)")
-println("Maximum library length: $(max_length)")
+#println("Templates")
+#for template in templates
+#    println(template)
+#end
 println("Index type: $(snakemake.params["index_type"])")
 println("Error rate: $(error_rate)")
 
 #load required packages
 ENV["MPLBACKEND"] = "Agg"
-using NextGenSeqUtils, DataFrames, DataFramesMeta, CSV,
-StatsBase, IterTools, StringDistances, Statistics
+using NextGenSeqUtils, DataFrames, DataFramesMeta, CSV, StatsBase, IterTools, StringDistances
 
 #defining functions
 function unique_not_substr(a)
@@ -173,9 +172,6 @@ sga_primers_r = Dict(
   "SGA_R04" => "CGAGATACTGCATAGTCTCGTGGGCTCGG",
 );
 
-SGA_F_univ = "CTACACNNNNNNNNTCGTCGGCAGCGTC"
-SGA_R_univ = "CGAGATNNNNNNNNGTCTCGTGGGCTCGG"
-
 function find_nextera_suffix(query_seq, query_phred, suffix; start_ix = 34, end_ix = 12, try_reverse_comp = true)
     for ix in start_ix:-1:end_ix
         window = query_seq[ix : ix + length(suffix) - 1]
@@ -241,14 +237,13 @@ end
 
 t1 = time()
 #filter .fastq
-filtered_path = snakemake.output["filtered_file"] #julia temp paths don't work
+filtered_path = snakemake.output[2] #julia temp paths don't work
 println("Filtering .fastq file...")
 @time fastq_filter(input_fastq_path,
                    filtered_path, #path here
                    error_rate = error_rate,
                    min_length = 400,
                    max_length = 5000)
-template_counts = Dict()
 
 if snakemake.params["index_type"] == "nextera"
     nextera_demux_dic,seqnames = demux_nextera(filtered_path)
@@ -259,18 +254,16 @@ if snakemake.params["index_type"] == "nextera"
     indexes2tuples = Dict(zip(index_tuples,nex_tuples))
     for template in collect(keys(templates))
         indexes = templates[template]
-        if (indexes["fwd_index"],indexes["rev_index"]) in index_tuples
-            template_seqs = nextera_demux_dic[indexes2tuples[(indexes["fwd_index"],indexes["rev_index"])]]
-            #match template sequences, length here
-
-            if length(template_seqs) < 3 @warn "Less than 3 reads for $(template): $(indexes)" end
+        if (indexes["N7_Index"],indexes["S5_Index"]) in index_tuples
+            template_seqs = nextera_demux_dic[indexes2tuples[(indexes["N7_Index"],indexes["S5_Index"])]]
+            if length(template_seqs) < 5 @warn "Less than 5 reads for $(template): $(indexes)" end
             trimmed_seqs = [
                 double_primer_trim(s,p,
-                N7_suffix*templates[template]["rev_primer"],S5_suffix*templates[template]["fwd_primer"];
+                N7_suffix,S5_suffix;
                 buffer = 8)
             for (s,p) in template_seqs
             ]
-            write_fastq(snakemake.params["outdir"]*"/$(template).fastq",
+            write_fastq(snakemake.output[1]*"/$(template).fastq",
                         [i[1] for i in trimmed_seqs],
                         [i[2] for i in trimmed_seqs];
                         names = seqnames[[i[3] for i in template_seqs]])
@@ -281,11 +274,10 @@ if snakemake.params["index_type"] == "nextera"
 elseif snakemake.params["index_type"] == "sga_primer"
     seqs, phreds, seqnames = read_fastq(filtered_path)
     demux_dic = demux_dict(seqs,
-        [i[1:16] for i in collect(values(sga_primers_f))], #setting length to run demux
-        [i[1:16] for i in collect(values(sga_primers_r))];
+        collect(values(sga_primers_f)),
+        collect(values(sga_primers_r));
         phreds = phreds,
-        tol_one_error = true,
-        verbose = false);
+        tol_one_error = true);
     nex_tuples = collect(keys(demux_dic))
     SGA_F = collect(keys(sga_primers_f))
     SGA_R = collect(keys(sga_primers_r))
@@ -293,47 +285,15 @@ elseif snakemake.params["index_type"] == "sga_primer"
     indexes2tuples = Dict(zip(index_tuples,nex_tuples))
     for template in collect(keys(templates))
         indexes = templates[template]
-        if (indexes["fwd_index"],indexes["rev_index"]) in index_tuples
-            template_seqs = demux_dic[indexes2tuples[(indexes["fwd_index"],indexes["rev_index"])]]
-            index_trimmed = [double_primer_trim(s,p,SGA_F_univ,SGA_R_univ) for (s,p,n) in template_seqs];
-            #match template
-            keeps = iterative_primer_match([s for (s,p) in index_trimmed], [templates[template]["fwd_primer"]],12,25; tol_one_error=true) .> 0 #primer matching, primers needs to be array
-            seqs_keeping = index_trimmed[keeps]
-            if length(seqs_keeping) == 0
-                @warn "No reads found for $(template): $(indexes)";
-                template_counts[template] = 0
-                continue
-            end
-            #length filter
-            filtered_seqs, filtered_phreds, filtered_names = length_filter(
-                [s for (s,p) in seqs_keeping],
-                [p for (s,p) in seqs_keeping],
-                seqnames[[i[3] for i in template_seqs]][keeps],
-                Int(round(median(length.([s for (s,p) in seqs_keeping]))*0.9)),
-                Int(round(median(length.([s for (s,p) in seqs_keeping]))*1.1))
-                )
-            #filtered_seqs = collect(zip(filtered_seqs...))
-
-            if length(filtered_seqs) < 3
-                @warn "Less than 3 reads for $(template): $(indexes)"
-            #elseif filtered_seqs
-            #     @warn "No reads found for $(template): $(indexes)"
-                template_counts[template] = length(filtered_seqs)
-                continue
-            end
-            trimmed_seqs = [
-                double_primer_trim(s,p,
-                templates[template]["fwd_primer"],templates[template]["rev_primer"])
-            for (s,p) in zip(filtered_seqs, filtered_phreds)
-            ]
-            template_counts[template] = length(filtered_seqs)
+        if (indexes["N7_Index"],indexes["S5_Index"]) in index_tuples
+            template_seqs = demux_dic[indexes2tuples[(indexes["N7_Index"],indexes["S5_Index"])]]
+            if length(template_seqs) < 5 @warn "Less than 5 reads for $(template): $(indexes)" end
             write_fastq(snakemake.output[1]*"/$(template).fastq",
-                        [i[1] for i in trimmed_seqs],
-                        [i[2] for i in trimmed_seqs];
-                        names = filtered_names)
+                        [i[1] for i in template_seqs],
+                        [i[2] for i in template_seqs];
+                        names = seqnames[[i[3] for i in template_seqs]])
         else
             @warn "No reads found for $(template): $(indexes)"
-            template_counts[template] = 0
         end
     end
 else
@@ -341,5 +301,3 @@ else
 end
 t2 = time()
 println("Demultiplex took $(t2 - t1) seconds.")
-template_df = DataFrame([[(k) for (k,v) in template_counts],[(v) for (k,v) in template_counts]], [:template,:count])
-CSV.write(snakemake.output["counts"], template_df)
