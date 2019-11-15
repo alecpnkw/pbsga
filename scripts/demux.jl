@@ -21,7 +21,8 @@ println("Error rate: $(error_rate)")
 
 #load required packages
 ENV["MPLBACKEND"] = "Agg"
-using NextGenSeqUtils, DataFrames, DataFramesMeta, CSV, StatsBase, IterTools, StringDistances
+using NextGenSeqUtils, DataFrames, DataFramesMeta, CSV,
+StatsBase, IterTools, StringDistances, Statistics
 
 #defining functions
 function unique_not_substr(a)
@@ -173,6 +174,9 @@ sga_primers_r = Dict(
   "SGA_R04" => "CGAGATACTGCATAGTCTCGTGGGCTCGG",
 );
 
+SGA_F_univ = "CTACACNNNNNNNNTCGTCGGCAGCGTC"
+SGA_R_univ = "CGAGATNNNNNNNNGTCTCGTGGGCTCGG"
+
 function find_nextera_suffix(query_seq, query_phred, suffix; start_ix = 34, end_ix = 12, try_reverse_comp = true)
     for ix in start_ix:-1:end_ix
         window = query_seq[ix : ix + length(suffix) - 1]
@@ -259,7 +263,7 @@ if snakemake.params["index_type"] == "nextera"
             template_seqs = nextera_demux_dic[indexes2tuples[(indexes["N7_Index"],indexes["S5_Index"])]]
             #match template sequences, length here
 
-            if length(template_seqs) < 5 @warn "Less than 5 reads for $(template): $(indexes)" end
+            if length(template_seqs) < 3 @warn "Less than 3 reads for $(template): $(indexes)" end
             trimmed_seqs = [
                 double_primer_trim(s,p,
                 N7_suffix*templates[template]["Reverse_Primer_2ndRd_Sequence"],S5_suffix*templates[template]["Forward_Primer_2ndRd_Sequence"];
@@ -277,8 +281,8 @@ if snakemake.params["index_type"] == "nextera"
 elseif snakemake.params["index_type"] == "sga_primer"
     seqs, phreds, seqnames = read_fastq(filtered_path)
     demux_dic = demux_dict(seqs,
-        collect(values(sga_primers_f)),
-        collect(values(sga_primers_r));
+        [i[1:16] for i in collect(values(sga_primers_f))],
+        [i[1:16] for i in collect(values(sga_primers_r))];
         phreds = phreds,
         tol_one_error = true);
     nex_tuples = collect(keys(demux_dic))
@@ -290,19 +294,28 @@ elseif snakemake.params["index_type"] == "sga_primer"
         indexes = templates[template]
         if (indexes["N7_Index"],indexes["S5_Index"]) in index_tuples
             template_seqs = demux_dic[indexes2tuples[(indexes["N7_Index"],indexes["S5_Index"])]]
+            println(length(template_seqs))
+            index_trimmed = [double_primer_trim(s,p,SGA_F_univ,SGA_R_univ) for (s,p,n) in template_seqs];
+            println(length(index_trimmed))
             #match template
-            keeps = iterative_primer_match([s for (s,p) in template_seqs], templates[template]["Forward_Primer_2ndRd_Sequence"],10,5) .> 0
-            seqs_keeping = template_seqs[keeps]
+            keeps = iterative_primer_match([s for (s,p) in index_trimmed], [templates[template]["Forward_Primer_2ndRd_Sequence"]],12,25; tol_one_error=true) .> 0 #primer matching, primers needs to be array
+            seqs_keeping = index_trimmed[keeps]
+            if length(seqs_keeping) == 0 @warn "No reads for $(template): $(indexes)"; continue end
+            println(length(seqs_keeping))
             #length filter
             filtered_seqs = length_filter(
-                [s for (s,p) in seqs_keeping,
-                [p for (s,p) in seqs_keeping,
-                seqnames[[i[3] for i in template_seqs]][keeps]
-                median(length.(seqs))*0.9,
-                median(length.(seqs))*1.1
+                [s for (s,p) in seqs_keeping],
+                [p for (s,p) in seqs_keeping],
+                seqnames[[i[3] for i in template_seqs]][keeps],
+                Int(round(median(length.([s for (s,p) in seqs_keeping]))*0.9)),
+                Int(round(median(length.([s for (s,p) in seqs_keeping]))*1.1))
                 ) #check
+            filtered_seqs = collect(zip(filtered_seqs...))
 
-            if length(filtered_seqs) < 5 @warn "Less than 5 reads for $(template): $(indexes)" end
+            if length(filtered_seqs) < 3
+                @warn "Less than 3 reads for $(template): $(indexes)"
+                continue
+            end
             trimmed_seqs = [
                 double_primer_trim(s,p,
                 templates[template]["Forward_Primer_2ndRd_Sequence"],templates[template]["Reverse_Primer_2ndRd_Sequence"])

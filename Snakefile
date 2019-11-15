@@ -1,5 +1,5 @@
 from snakemake.remote.SFTP import RemoteProvider
-SFTP = RemoteProvider(username="appankow", private_key="/Users/alecpankow/.ssh/themis_id_rsa")
+SFTP = RemoteProvider(username="appankow", private_key="/Users/appankow/.ssh/id_rsa")
 
 configfile: "config.yaml"
 
@@ -9,7 +9,7 @@ rule all:
 
 rule demux:
     input:
-        SFTP.remote("hercules.mullins.microbiol.washington.edu/opt/shared/PacBio_PipelineData/{dataset}/{dataset}.fastq")
+        SFTP.remote("hercules/opt/shared/PacBio_PipelineData/{dataset}/{dataset}.fastq")
     output:
         directory("demux/{dataset}/"),
         temporary("tmp/{dataset}_filt.fastq")
