@@ -20,7 +20,7 @@ end
 
 @everywhere function threshDenoiseFASTQ(file; fine_radius = 1.0, thresh = 0.65)
     seqs,phreds,seq_names = read_fastq(file)
-    if length(seqs) < 3
+    if length(seqs) < 10
         println("Insufficient read depth for $(basename(file))!")
         return ([],[])
     end

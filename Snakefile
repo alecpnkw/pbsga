@@ -1,7 +1,7 @@
 from snakemake.remote.SFTP import RemoteProvider
-SFTP = RemoteProvider(username="appankow", private_key="/Users/appankow/.ssh/id_rsa")
+SFTP = RemoteProvider(username="appankow", private_key="/home/appankow/.ssh/id_rsa_themis")
 
-configfile: "config.yaml"
+configfile: "AMP-04-config.yaml"
 
 rule all:
     input:

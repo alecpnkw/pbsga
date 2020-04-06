@@ -1,0 +1,1458 @@
+datasets:
+  2020-04_UW_M006:
+    index_type: sga_primer
+    templates:
+      V704_1236_060_GP_pbsga01:
+        fwd_index: SGA_F01
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga02:
+        fwd_index: SGA_F02
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga03:
+        fwd_index: SGA_F03
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga04:
+        fwd_index: SGA_F04
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga05:
+        fwd_index: SGA_F05
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga06:
+        fwd_index: SGA_F06
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga07:
+        fwd_index: SGA_F07
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga08:
+        fwd_index: SGA_F08
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga09:
+        fwd_index: SGA_F09
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga10:
+        fwd_index: SGA_F10
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga11:
+        fwd_index: SGA_F11
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga12:
+        fwd_index: SGA_F12
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga13:
+        fwd_index: SGA_F01
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga14:
+        fwd_index: SGA_F02
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga17:
+        fwd_index: SGA_F03
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga18:
+        fwd_index: SGA_F04
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga19:
+        fwd_index: SGA_F05
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga20:
+        fwd_index: SGA_F06
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga21:
+        fwd_index: SGA_F07
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga22:
+        fwd_index: SGA_F08
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga23:
+        fwd_index: SGA_F09
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga24:
+        fwd_index: SGA_F10
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga26:
+        fwd_index: SGA_F11
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga27:
+        fwd_index: SGA_F12
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga28:
+        fwd_index: SGA_F01
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga29:
+        fwd_index: SGA_F02
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga30:
+        fwd_index: SGA_F03
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga31:
+        fwd_index: SGA_F04
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga32:
+        fwd_index: SGA_F05
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga34:
+        fwd_index: SGA_F06
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga35:
+        fwd_index: SGA_F07
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga36:
+        fwd_index: SGA_F08
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga37:
+        fwd_index: SGA_F09
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga39:
+        fwd_index: SGA_F10
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga42:
+        fwd_index: SGA_F11
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga44:
+        fwd_index: SGA_F12
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga45:
+        fwd_index: SGA_F01
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga47:
+        fwd_index: SGA_F02
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga48:
+        fwd_index: SGA_F03
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga49:
+        fwd_index: SGA_F04
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga51:
+        fwd_index: SGA_F05
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga52:
+        fwd_index: SGA_F06
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga53:
+        fwd_index: SGA_F07
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga54:
+        fwd_index: SGA_F08
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga55:
+        fwd_index: SGA_F09
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga57:
+        fwd_index: SGA_F10
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga58:
+        fwd_index: SGA_F11
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga59:
+        fwd_index: SGA_F12
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga60:
+        fwd_index: SGA_F13
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga61:
+        fwd_index: SGA_F14
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga62:
+        fwd_index: SGA_F15
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga64:
+        fwd_index: SGA_F16
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga65:
+        fwd_index: SGA_F17
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga66:
+        fwd_index: SGA_F18
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga67:
+        fwd_index: SGA_F19
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga68:
+        fwd_index: SGA_F20
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga69:
+        fwd_index: SGA_F21
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga70:
+        fwd_index: SGA_F22
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga71:
+        fwd_index: SGA_F23
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga72:
+        fwd_index: SGA_F24
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga73:
+        fwd_index: SGA_F13
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga74:
+        fwd_index: SGA_F14
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga75:
+        fwd_index: SGA_F15
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga76:
+        fwd_index: SGA_F16
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga77:
+        fwd_index: SGA_F17
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga78:
+        fwd_index: SGA_F18
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga79:
+        fwd_index: SGA_F19
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga80:
+        fwd_index: SGA_F20
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga81:
+        fwd_index: SGA_F21
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga82:
+        fwd_index: SGA_F22
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga83:
+        fwd_index: SGA_F23
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1236_060_GP_pbsga84:
+        fwd_index: SGA_F24
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+  2020-04_UW_M007:
+    index_type: sga_primer
+    templates:
+      V704_0578_190_REN_pbsga01:
+        fwd_index: SGA_F01
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga02:
+        fwd_index: SGA_F02
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga03:
+        fwd_index: SGA_F03
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga04:
+        fwd_index: SGA_F04
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga05:
+        fwd_index: SGA_F05
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga06:
+        fwd_index: SGA_F06
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga07:
+        fwd_index: SGA_F07
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga08:
+        fwd_index: SGA_F08
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga09:
+        fwd_index: SGA_F09
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga10:
+        fwd_index: SGA_F10
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga11:
+        fwd_index: SGA_F11
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga12:
+        fwd_index: SGA_F12
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga13:
+        fwd_index: SGA_F01
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga14:
+        fwd_index: SGA_F02
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga15:
+        fwd_index: SGA_F03
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga16:
+        fwd_index: SGA_F04
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga17:
+        fwd_index: SGA_F05
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga18:
+        fwd_index: SGA_F06
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga19:
+        fwd_index: SGA_F07
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga20:
+        fwd_index: SGA_F08
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga21:
+        fwd_index: SGA_F09
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga22:
+        fwd_index: SGA_F10
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga23:
+        fwd_index: SGA_F11
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga24:
+        fwd_index: SGA_F12
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga25:
+        fwd_index: SGA_F01
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga26:
+        fwd_index: SGA_F02
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga27:
+        fwd_index: SGA_F03
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga28:
+        fwd_index: SGA_F04
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga29:
+        fwd_index: SGA_F05
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga30:
+        fwd_index: SGA_F06
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga31:
+        fwd_index: SGA_F07
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga32:
+        fwd_index: SGA_F08
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga33:
+        fwd_index: SGA_F09
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga34:
+        fwd_index: SGA_F10
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga35:
+        fwd_index: SGA_F11
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga36:
+        fwd_index: SGA_F12
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga37:
+        fwd_index: SGA_F01
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga38:
+        fwd_index: SGA_F02
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_0578_190_REN_pbsga39:
+        fwd_index: SGA_F03
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_GP_pbsga01:
+        fwd_index: SGA_F05
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga02:
+        fwd_index: SGA_F06
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga03:
+        fwd_index: SGA_F07
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga04:
+        fwd_index: SGA_F08
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga05:
+        fwd_index: SGA_F09
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga06:
+        fwd_index: SGA_F10
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga07:
+        fwd_index: SGA_F11
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga08:
+        fwd_index: SGA_F12
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga09:
+        fwd_index: SGA_F13
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga10:
+        fwd_index: SGA_F14
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga12:
+        fwd_index: SGA_F15
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga13:
+        fwd_index: SGA_F16
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga14:
+        fwd_index: SGA_F17
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga15:
+        fwd_index: SGA_F18
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga16:
+        fwd_index: SGA_F19
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga17:
+        fwd_index: SGA_F20
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga18:
+        fwd_index: SGA_F21
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga19:
+        fwd_index: SGA_F22
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga20:
+        fwd_index: SGA_F23
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga21:
+        fwd_index: SGA_F24
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga22:
+        fwd_index: SGA_F13
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga23:
+        fwd_index: SGA_F14
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_GP_pbsga24:
+        fwd_index: SGA_F15
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_3000_241_REN_pbsga01:
+        fwd_index: SGA_F17
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga02:
+        fwd_index: SGA_F18
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga03:
+        fwd_index: SGA_F19
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga04:
+        fwd_index: SGA_F20
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga05:
+        fwd_index: SGA_F21
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga06:
+        fwd_index: SGA_F22
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga07:
+        fwd_index: SGA_F23
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga08:
+        fwd_index: SGA_F24
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga09:
+        fwd_index: SGA_F13
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga10:
+        fwd_index: SGA_F14
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga11:
+        fwd_index: SGA_F15
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga12:
+        fwd_index: SGA_F16
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga13:
+        fwd_index: SGA_F17
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga14:
+        fwd_index: SGA_F18
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga15:
+        fwd_index: SGA_F19
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga16:
+        fwd_index: SGA_F20
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga17:
+        fwd_index: SGA_F21
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga18:
+        fwd_index: SGA_F22
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga19:
+        fwd_index: SGA_F23
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga20:
+        fwd_index: SGA_F24
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga21:
+        fwd_index: SGA_F13
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga22:
+        fwd_index: SGA_F14
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga23:
+        fwd_index: SGA_F15
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga24:
+        fwd_index: SGA_F16
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga25:
+        fwd_index: SGA_F17
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_3000_241_REN_pbsga26:
+        fwd_index: SGA_F18
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+  2020-04_UW_M008:
+    index_type: sga_primer
+    templates:
+      V704_1969_210_GP_pbsga01:
+        fwd_index: SGA_F01
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga02:
+        fwd_index: SGA_F02
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga03:
+        fwd_index: SGA_F03
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga04:
+        fwd_index: SGA_F04
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga05:
+        fwd_index: SGA_F05
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga06:
+        fwd_index: SGA_F06
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga07:
+        fwd_index: SGA_F07
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga09:
+        fwd_index: SGA_F08
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga11:
+        fwd_index: SGA_F09
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga12:
+        fwd_index: SGA_F10
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga13:
+        fwd_index: SGA_F11
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga14:
+        fwd_index: SGA_F12
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga15:
+        fwd_index: SGA_F01
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga16:
+        fwd_index: SGA_F02
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga18:
+        fwd_index: SGA_F03
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga19:
+        fwd_index: SGA_F04
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga22:
+        fwd_index: SGA_F05
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga23:
+        fwd_index: SGA_F06
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga24:
+        fwd_index: SGA_F07
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga25:
+        fwd_index: SGA_F08
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga28:
+        fwd_index: SGA_F09
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga29:
+        fwd_index: SGA_F10
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga31:
+        fwd_index: SGA_F11
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga32:
+        fwd_index: SGA_F12
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga33:
+        fwd_index: SGA_F01
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga34:
+        fwd_index: SGA_F02
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga35:
+        fwd_index: SGA_F03
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga36:
+        fwd_index: SGA_F04
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga40:
+        fwd_index: SGA_F05
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga41:
+        fwd_index: SGA_F06
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_GP_pbsga42:
+        fwd_index: SGA_F07
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1969_210_REN_pbsga01:
+        fwd_index: SGA_F08
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga02:
+        fwd_index: SGA_F09
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga03:
+        fwd_index: SGA_F10
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga04:
+        fwd_index: SGA_F11
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga05:
+        fwd_index: SGA_F12
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga06:
+        fwd_index: SGA_F01
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga07:
+        fwd_index: SGA_F02
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga08:
+        fwd_index: SGA_F03
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga10:
+        fwd_index: SGA_F04
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga11:
+        fwd_index: SGA_F05
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga12:
+        fwd_index: SGA_F06
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga13:
+        fwd_index: SGA_F07
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga14:
+        fwd_index: SGA_F08
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga15:
+        fwd_index: SGA_F09
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga16:
+        fwd_index: SGA_F10
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga17:
+        fwd_index: SGA_F11
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga18:
+        fwd_index: SGA_F12
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga19:
+        fwd_index: SGA_F13
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga20:
+        fwd_index: SGA_F14
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga21:
+        fwd_index: SGA_F15
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga22:
+        fwd_index: SGA_F16
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga23:
+        fwd_index: SGA_F17
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga24:
+        fwd_index: SGA_F18
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga25:
+        fwd_index: SGA_F19
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga26:
+        fwd_index: SGA_F20
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga27:
+        fwd_index: SGA_F21
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga28:
+        fwd_index: SGA_F22
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga29:
+        fwd_index: SGA_F23
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1969_210_REN_pbsga30:
+        fwd_index: SGA_F24
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+  2020-04_UW_M009:
+    index_type: sga_primer
+    templates:
+      V704_1706_040_GP_pbsga03:
+        fwd_index: SGA_F01
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga05:
+        fwd_index: SGA_F02
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga06:
+        fwd_index: SGA_F03
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga07:
+        fwd_index: SGA_F04
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga08:
+        fwd_index: SGA_F05
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga09:
+        fwd_index: SGA_F06
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga10:
+        fwd_index: SGA_F07
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga11:
+        fwd_index: SGA_F08
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga12:
+        fwd_index: SGA_F09
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga13:
+        fwd_index: SGA_F10
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga14:
+        fwd_index: SGA_F11
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga15:
+        fwd_index: SGA_F12
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga16:
+        fwd_index: SGA_F01
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga17:
+        fwd_index: SGA_F02
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga18:
+        fwd_index: SGA_F03
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga19:
+        fwd_index: SGA_F04
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga20:
+        fwd_index: SGA_F05
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga21:
+        fwd_index: SGA_F06
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga22:
+        fwd_index: SGA_F07
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga23:
+        fwd_index: SGA_F08
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga24:
+        fwd_index: SGA_F09
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga25:
+        fwd_index: SGA_F10
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga26:
+        fwd_index: SGA_F11
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga27:
+        fwd_index: SGA_F12
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga28:
+        fwd_index: SGA_F01
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga29:
+        fwd_index: SGA_F02
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga30:
+        fwd_index: SGA_F03
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga32:
+        fwd_index: SGA_F04
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_GP_pbsga33:
+        fwd_index: SGA_F05
+        fwd_primer: TCGGCAGCGTCTTGACTAGCGGAGGCTAGAAGGAGA
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGATAGGCTGTACTGTCCATTTATCMGG
+      V704_1706_040_REN_pbsga01:
+        fwd_index: SGA_F09
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga02:
+        fwd_index: SGA_F10
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga03:
+        fwd_index: SGA_F11
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga04:
+        fwd_index: SGA_F12
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R03
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga05:
+        fwd_index: SGA_F01
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga06:
+        fwd_index: SGA_F02
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga07:
+        fwd_index: SGA_F03
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga08:
+        fwd_index: SGA_F04
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga09:
+        fwd_index: SGA_F05
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga10:
+        fwd_index: SGA_F06
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga11:
+        fwd_index: SGA_F07
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga12:
+        fwd_index: SGA_F08
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga13:
+        fwd_index: SGA_F09
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga14:
+        fwd_index: SGA_F10
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga15:
+        fwd_index: SGA_F11
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga16:
+        fwd_index: SGA_F12
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R04
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga17:
+        fwd_index: SGA_F13
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga18:
+        fwd_index: SGA_F14
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga19:
+        fwd_index: SGA_F15
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga20:
+        fwd_index: SGA_F16
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga21:
+        fwd_index: SGA_F17
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga22:
+        fwd_index: SGA_F18
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga23:
+        fwd_index: SGA_F19
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga24:
+        fwd_index: SGA_F20
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga25:
+        fwd_index: SGA_F21
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga26:
+        fwd_index: SGA_F22
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga27:
+        fwd_index: SGA_F23
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga28:
+        fwd_index: SGA_F24
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R01
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga29:
+        fwd_index: SGA_F13
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga30:
+        fwd_index: SGA_F14
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga31:
+        fwd_index: SGA_F15
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga32:
+        fwd_index: SGA_F16
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga33:
+        fwd_index: SGA_F17
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga34:
+        fwd_index: SGA_F18
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga35:
+        fwd_index: SGA_F19
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga36:
+        fwd_index: SGA_F20
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga37:
+        fwd_index: SGA_F21
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga38:
+        fwd_index: SGA_F22
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga39:
+        fwd_index: SGA_F23
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
+      V704_1706_040_REN_pbsga40:
+        fwd_index: SGA_F24
+        fwd_primer: TCGTCGGCAGCGTCGATCAAGCTTTAGGCATCTCCT
+        rev_index: SGA_R02
+        rev_primer: GTCTCGTGGGCTCGGGTACCTGAGGTCTGACTGGRAAAC
