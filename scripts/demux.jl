@@ -305,14 +305,16 @@ elseif snakemake.params["index_type"] == "sga_primer"
                 continue
             end
             #length filter
-            filtered_seqs, filtered_phreds, filtered_names = length_filter(
-                [s for (s,p) in seqs_keeping],
-                [p for (s,p) in seqs_keeping],
-                seqnames[[i[3] for i in template_seqs]][keeps],
-                Int(round(median(length.([s for (s,p) in seqs_keeping]))*0.9)),
-                Int(round(median(length.([s for (s,p) in seqs_keeping]))*1.1))
-                )
-            #filtered_seqs = collect(zip(filtered_seqs...))
+            #filtered_seqs, filtered_phreds, filtered_names = length_filter(
+                #[s for (s,p) in seqs_keeping],
+                #[p for (s,p) in seqs_keeping],
+                #seqnames[[i[3] for i in template_seqs]][keeps],
+                #Int(round(median(length.([s for (s,p) in seqs_keeping]))*0.9)),
+                #Int(round(median(length.([s for (s,p) in seqs_keeping]))*1.1))
+                #)
+            filtered_seqs = [s for (s,p) in seqs_keeping]
+            filtered_phreds = [p for (s,p) in seqs_keeping]
+            filtered_names = seqnames[[i[3] for i in template_seqs]][keeps]
 
             if length(filtered_seqs) < 3
                 @warn "Less than 3 reads for $(template): $(indexes)"
