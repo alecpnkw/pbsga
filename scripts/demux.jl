@@ -297,7 +297,7 @@ elseif snakemake.params["index_type"] == "sga_primer"
             template_seqs = demux_dic[indexes2tuples[(indexes["fwd_index"],indexes["rev_index"])]]
             index_trimmed = [double_primer_trim(s,p,SGA_F_univ,SGA_R_univ) for (s,p,n) in template_seqs];
             #match template
-            keeps = iterative_primer_match([s for (s,p) in index_trimmed], [templates[template]["fwd_primer"]],12,25; tol_one_error=true) .> 0 #primer matching, primers needs to be array
+            keeps = iterative_primer_match([s for (s,p) in index_trimmed], [templates[template]["fwd_primer"]],18,15; tol_one_error=true) .> 0 #primer matching, primers needs to be array
             seqs_keeping = index_trimmed[keeps]
             if length(seqs_keeping) == 0
                 @warn "No reads found for $(template): $(indexes)";
