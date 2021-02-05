@@ -1,0 +1,12 @@
+[deps]
+BioSequences = "7e6ae17a-c86d-528c-b3b9-7f778a29fe59"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DPMeansClustering = "37097376-7805-5844-a42f-f170eef30b7c"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+DataFramesMeta = "1313f7d8-7da2-5740-9ea0-a2ca25f37964"
+IterTools = "c8e1da08-722c-5040-9ed9-7db0dc04731e"
+NextGenSeqUtils = "59ec5594-ae11-5d8d-a868-831a7e904d88"
+RobustAmpliconDenoising = "4bd7a7d9-cbc9-5944-9319-21f5e7d2c618"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+StringDistances = "88034a9c-02f8-509d-84a9-84ec65e18404"

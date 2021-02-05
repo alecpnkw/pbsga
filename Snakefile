@@ -1,7 +1,4 @@
-from snakemake.remote.SFTP import RemoteProvider
-SFTP = RemoteProvider(username="appankow", private_key="/home/appankow/.ssh/id_rsa_themis")
-
-configfile: "AMP-04-config.yaml"
+configfile: "config.yaml"
 
 rule all:
     input:
@@ -9,7 +6,7 @@ rule all:
 
 rule demux:
     input:
-        SFTP.remote("hercules/opt/shared/PacBio_PipelineData/{dataset}/{dataset}.fastq")
+        "raw-reads/{dataset}.fastq"
     output:
         directory("demux/{dataset}/"),
         counts = "counts/{dataset}.csv",
@@ -27,5 +24,5 @@ rule consensus:
     output:
         "consensus/{dataset}.fasta"
     threads: 6
-    shell:
-        "julia -p {threads} scripts/consensus.jl {input} {output}"
+    script:
+        "scripts/consensus.jl"

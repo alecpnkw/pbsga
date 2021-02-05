@@ -1,6 +1,11 @@
-using Distributed
-@everywhere ENV["MPLBACKEND"] = "Agg"
-@everywhere using RobustAmpliconDenoising, NextGenSeqUtils
+#using Distributed
+#@everywhere begin
+#  import Pkg
+#  Pkg.activate(@__DIR__)
+#end
+
+ENV["MPLBACKEND"] = "Agg"
+using RobustAmpliconDenoising, NextGenSeqUtils
 
 function generateConsensusFromDir(dir, template_name)
     files = [dir*"/"*f for f in readdir(dir) if f[end-5:end] == ".fastq"]
@@ -10,13 +15,13 @@ function generateConsensusFromDir(dir, template_name)
         println("WARNING: no template families for $(template_name)")
         exit()
     end
-    cons_collection = pmap(ConsensusFromFastq, files)
+    cons_collection = map(ConsensusFromFastq, files)
     seq_collection = [i[1] for i in cons_collection]
     seqname_collection = [template_name*i[2] for i in cons_collection]
     return seq_collection, seqname_collection
 end
 
-@everywhere function ConsensusFromFastq(file)
+function ConsensusFromFastq(file)
     seqs,phreds,seq_names = read_fastq(file)
     draft = consensus_seq(seqs)
     draft2 = refine_ref(draft, seqs)
@@ -26,7 +31,6 @@ end
     return final_cons, cons_name
 end
 
-@everywhere begin
 """
 Returns an array of degapped coordinates, such that
 coords(ref, read)[i] gives you the position the aligned read/ref
@@ -48,9 +52,7 @@ function coords(ref, read)
     end
     return coordMap
 end
-end
 
-@everywhere begin
 """
 Return matches to a candidate reference from a set of reads.
 """
@@ -73,13 +75,12 @@ function getReadMatches(candidate_ref, reads, shift; degap_param = true, kmer_al
     end
     return alignments, maps, matches, matchContent
 end
-end
 
 #load required packages
-using Distributed
-@everywhere ENV["MPLBACKEND"] = "Agg"
-@everywhere using NextGenSeqUtils, RobustAmpliconDenoising
-
+#using Distributed
+#@everywhere ENV["MPLBACKEND"] = "Agg"
+#@everywhere using NextGenSeqUtils, RobustAmpliconDenoising
+#=
 function denoiseDir(dir; fine_radius = 1.0)
     dir = strip(dir,'/')
     files = [dir*"/"*f for f in readdir(dir) if f[end-5:end] == ".fastq"]
@@ -111,11 +112,12 @@ end
     end
     return cluster_seqs, cluster_names
 end
+=#
 
 #Calculate consensus sequences for each family.
 t1 = time()
-cons_collection, name_collection = generateConsensusFromDir(ARGS[1], "")
-write_fasta(ARGS[2],
+cons_collection, name_collection = generateConsensusFromDir(snakemake.input[1], "")
+write_fasta(snakemake.output[1],
     cons_collection;
     names = name_collection)
 t2 = time()

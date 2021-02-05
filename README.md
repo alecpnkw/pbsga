@@ -1,1 +1,3 @@
-# SGA demultiplex and consensus generation
+# pbsga
+
+PacBio SGA demultiplexing and consensus generation
